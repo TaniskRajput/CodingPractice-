@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div>p {
+            color: red;
+        }
+
+        div>section>p {
+            color: blue;
+        }
+
+        div>section>article>p {
+            color: green;
+        }
+
+        body {
+            color: yellow;
+        }
+
+        h1+p {
+            color: red;
+        }
+
+        div~h1 {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>Father</p>
+        <section>
+            <p>Son</p>
+        </section>
+        <section>
+            <p>Son2</p>
+            <article>
+                <p>Grandson</p>
+        </section>
+    </div>
+</body>
+<p>hello</p>
+<p>bye</p>
+<h1>hello</h1>
+<p>+ element implenent</p>
+
+</html>

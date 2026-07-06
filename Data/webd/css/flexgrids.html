@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* body {
+            margin: 0;
+            padding: 0;
+        }
+
+        div div {
+            background: rebeccapurple;
+            padding: 120px;
+            text-align: center;
+            font-size: 20px;
+            margin: 10px;
+        } */
+
+        .box {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+        @media (min-width: 321px) and (max-width: 550px) {
+            .box {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 551px) and (max-width: 750px) {
+            .box {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (min-width: 751px) and (max-width: 1300px) {
+            .box {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        @media (min-width: 1301px) {
+            .box {
+                grid-template-columns: repeat(5, 1fr);
+            }
+        }
+
+        div div {
+            padding: 20px;
+            background: #ff0000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div>Product 1</div>
+        <div>Product 2</div>
+        <div>Product 3</div>
+        <div>Product 4</div>
+        <div>Product 5</div>
+        <div>Product 6</div>
+        <div>Product 7</div>
+        <div>Product 8</div>
+        <div>Product 9</div>
+        <div>Product 10</div>
+    </div>
+</body>
+
+</html>
