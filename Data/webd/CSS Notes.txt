@@ -1,0 +1,81 @@
+CSS Notes:
+
+flex: horizontal
+blocks: vertical
+
+flex converts the vertical allignment into horizontal, 
+absolute: parent 
+relative : child
+
+pseudo classes (:) it can be termed as a superset class,eg: mca is a pseado class for all the sub specializations,
+pseudo elemts(:) it is a subset of pseudo classes eg the generalized version of mca(Specialization).
+
+Combinators: (>,+,~) = [~ used for giving properties to siblings.] [> is used for the direct children of the parent not sub-childrens] [" " creates a relation between parent and child by giving properties to all childrens] [+ is for giving properties to next element.]
+
+
+grids:
+width should always be written in %;
+height should always be auto
+use universal margin , 
+
+Markup language : made of tags.
+Scripting language : Used to write scripts on frontends, client side.
+
+JAVASCRIPT:
+{  𝙑𝙖𝙧𝙞𝙖𝙗𝙡𝙚𝙨 𝙖𝙣𝙙 𝙙𝙖𝙩𝙖𝙩𝙮𝙥𝙚𝙨, 𝙘𝙤𝙣𝙩𝙧𝙤𝙡 𝙨𝙩𝙖𝙩𝙚𝙢𝙚𝙣𝙩𝙨, 𝙖𝙧𝙧𝙖𝙮𝙨, 𝙝𝙞𝙜𝙝𝙚𝙧 𝙤𝙧𝙙𝙚𝙧 𝙘𝙤𝙡𝙡𝙚𝙘𝙩𝙞𝙤𝙣, 𝙤𝙗𝙟𝙚𝙘𝙩𝙨, 𝙚𝙨𝙘, 𝙖𝙨𝙮𝙣𝙘 & 𝙖𝙬𝙖𝙞𝙩𝙨, 𝙥𝙧𝙤𝙢𝙞𝙨𝙚𝙨 𝙖𝙣𝙙 𝙘𝙖𝙡𝙡𝙗𝙖𝙘𝙠𝙨, 𝙙𝙤𝙢, 𝙙𝙤𝙢 𝙢𝙖𝙣𝙞𝙥𝙪𝙡𝙖𝙩𝙞𝙤𝙣, 𝙚𝙫𝙚𝙣𝙩𝙨 ,𝙚𝙫𝙚𝙣𝙩 𝙝𝙖𝙣𝙙𝙡𝙚𝙧𝙨, 𝙚𝙫𝙚𝙣𝙩 𝙡𝙞𝙨𝙩𝙚𝙣𝙚𝙧𝙨, 𝙖𝙟𝙖𝙭, 𝙘𝙡𝙤𝙨𝙪𝙧𝙚𝙨, 𝙛𝙪𝙣𝙘𝙩𝙞𝙤𝙣𝙨, 𝙛𝙚𝙩𝙘𝙝.  }
+->𝙑𝙖𝙧𝙞𝙖𝙗𝙡𝙚𝙨: 
+var : A var can be declared again and used again with new value or new datatype.
+Example:{
+var x = 2
+var x = "Tanisk"
+}
+let : if a variable is declared once it can only be reassigned but not re declared which means , if we declrare let x = 20 we can do x = "tanisk" but not let x = "tanisk"
+
+const: if a variable is decraled and reassigned it can be redecalred and reassigned in the whole program.
+
+->𝙙𝙖𝙩𝙖𝙩𝙮𝙥𝙚𝙨: 
+ numbers: double ,int ,float
+ strings: "",'',''' '''
+ booleans : true, false
+ empty : null
+ undefined : no value assigned
+ BigInt : large integers
+ symbols
+ 
+->Operators:
+
+Truthy faldy values.
+console.log("Tanisk" || "hello world")
+console.log("" || "hello world")
+console.log([] && "hello")//empty array is true
+console.log({} && "hello")//empty object is true
+console.log(0 && "hello")//0 is false
+console.log(null && "hello")//null is false
+console.log(undefined && "hello")//undefined is false
+
+ 
+-> 𝙘𝙤𝙣𝙩𝙧𝙤𝙡 𝙨𝙩𝙖𝙩𝙚𝙢𝙚𝙣𝙩𝙨:
+if
+if else
+if else if , else
+switch cases
+
+
+Types of functions:
+normal function,
+function expression
+arrow function
+multiparameter function
+callback function
+iife
+anonymous function
+
+Hoisting :
+before defining a function we are calling a function that is called as hoisting , it will not throw an error in javascript.
+
+synchronus and asynchronus programming:
+ 
+ synchornus- the program executed on at a time one by one, major disadvantage is that if one api stops working the other applications will not be executed afterwards causing system crash.
+ asynchhronus - follows microservice architecture, which means all the features or api are independent from each other.
+                javascript is a synchronus language but later on it got converted in asynchronous by the help of callbacks.
+                callbacls-----> promises -----> async & await.
